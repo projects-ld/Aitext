@@ -10,6 +10,6 @@
 <img width="803" height="773" alt="image" src="https://github.com/user-attachments/assets/122914d3-a9a1-4b9e-aaa1-9c44e0f44215" />
 
 ## 👥 Contributors
-- Leen Azzam  
--Daniah zahed (GitHub: [@username](https://github.com/DaniahZaheda))
+- Leen Azzam
+- Daniah zahed (GitHub: [@username](https://github.com/DaniahZaheda))
 
