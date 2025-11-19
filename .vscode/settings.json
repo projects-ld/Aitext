@@ -1,0 +1,8 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/907a8b02-266b-4111-8207-26b85d5283c6/resourceGroups/AItext/providers/Microsoft.Web/sites/AItext-w",
+    "appService.deploySubpath": ".",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ]
+}
