@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI CV Analyzer</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #e0e7ff, #f3f4f6);
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* ===== Floating AI / CV Illustrations ===== */
+    .decor {
+      position: absolute;
+      width: 140px;
+      opacity: 0.2;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    .cv {
+      top: 10%;
+      left: 6%;
+      animation-delay: 0s;
+    }
+
+    .ai {
+      top: 15%;
+      right: 8%;
+      animation-delay: 1.5s;
+    }
+
+    .student {
+      bottom: 10%;
+      left: 5%;
+      animation-delay: 2s;
+    }
+
+    .employee {
+      bottom: 12%;
+      right: 7%;
+      animation-delay: 3s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    /* ===== MAIN CARD ===== */
+    .container {
+      background: white;
+      width: 90%;
+      max-width: 600px;
+      padding: 40px 45px;
+      border-radius: 25px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      z-index: 10;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #1e3a8a;
+      margin-bottom: 10px;
+      font-size: 2.2em;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    textarea, input[type=file] {
+      width: 100%;
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+      resize: none;
+      transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    textarea:focus, input[type=file]:focus {
+      border-color: #2563eb;
+      box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+      outline: none;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #1e40af;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+    }
+
+    footer {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <!-- Decorative Illustrations -->
+  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="decor student" alt="student icon">
+  <img src="https://cdn-icons-png.flaticon.com/512/4715/4715321.png" class="decor employee" alt="employee icon">
+  <img src="https://cdn-icons-png.flaticon.com/512/4472/4472581.png" class="decor ai" alt="ai brain icon">
+  <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" class="decor cv" alt="cv document icon">
+
+  <!-- Main Card -->
+  <div class="container">
+    <h1>AI CV Analyzer</h1>
+    <p>Upload your resume or paste your CV text to get smart AI insights.</p>
+
+    <form action="/analyze" method="POST" enctype="multipart/form-data">
+      <textarea name="text" rows="8" placeholder="Paste your CV text here..."></textarea>
+      <p><strong>Or upload your resume file:</strong></p>
+      <input type="file" name="cvfile" accept=".txt" />
+      <button type="submit">🔍 Analyze</button>
+    </form>
+
+    
+  </div>
+</body>
+</html>
