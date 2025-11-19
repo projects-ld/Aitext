@@ -11,5 +11,5 @@
 
 ## 👥 Contributors
 - Leen Azzam
-- Daniah zahed (GitHub: [@username](https://github.com/DaniahZaheda))
+- Daniah zaheda (GitHub: [@username](https://github.com/DaniahZaheda))
 
